@@ -7,8 +7,39 @@ background-size: cover
   
 }
 
-.jumbotron {
+.jumbotron, .card {
   background-size:cover;
   background-color: rgba(100,100,100, 0.5);
 color: inherit;
+}
+
+
+p, h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
+  font-size: 20px;
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 60s infinite linear;
+}
+
+
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+.image-fluid {
+  max-width: 100%;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
