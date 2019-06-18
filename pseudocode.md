@@ -6,9 +6,17 @@ HTML psedudocode
     -make sure the button is inside the subwrapper div and not in the wrapper div
 3) close the initial wrapper div and add the jQuery tag and the  js tag 
 
-JS
+JS 
 1)create a method to check if you propertly linked the js file with your html file 
-    -use the click funtion to disapear the start button
+    a)use the click funtion to disapear the start button
+    b)include a way to run the game function with the loadQuestion method
+    c)create a way to tell the player if got a question correct or incorrect after the button asnwer is being pressed <!--work here after completing 5.c.viii-->
+        i)start with a jquery click event
+            *the jquery selector will be document
+            *the parameters for the on click event will be click, .answer-button, function(e)
+            *inside the function write game dot clicked (e)
+                *note: e is used to store an event. So if we are passing e onto this function and also passing e onto the click we are actually passing through the event. We are passing through what is being click <!--move to 9)click method-->
+
 2)create questions and asnwers you would like to display on your game, also get include the image to the gif you would like to display if the player answered right
     a)create an array with the questions and answers for your game (make sure you use name this variable something that will not confuse you).  
         i)the questions an asnwers will be the object of the array
@@ -32,7 +40,7 @@ JS
             *you are going to lower the counter and post the counter to the page and it will also check if the counter is less than or equal to zero 
     b)post a new question to the page
         i)use a jQuery selector and choose the subwraper
-        ii)then select the type of document you are using and open a pair of parenthesis
+        ii)append and open parenthesis
         iii)inside the parenthesis choose the html element to display the question and add the question property of the game variable and open a pair of brackets
         iv)on the brakets you will need to choose the appropiate object you want the code to select and close the braket
             *select the "game" function and add it with a period to the "currentQuestion and close the braket
@@ -52,15 +60,107 @@ JS
             *data-name: stores data within an element
                 *we are puttin the answer within the data element
             *we are storing the answer at i within this button
+        <!--move to 1.c-->
              
-
 6)Work on  nextQuestion method
+    a)set counter back to 30 <!--this way the counter will go back to 30 after each question, otherwise the seconds from previous question would remain -->
+        i)game, .counter, equals, 30
+    b)set the html document to display the correct number of seconds
+        i)$, #, counter, .html, game, .counter
+    c)use an incrementor for the current question
+    d)load the question 
+        i)game
+        ii).loadQuestion()
+    <!--move to 7-->
+
 7)Work on timeUp method
+    a)clear interval timer
+    b)set subwrapper to tell us that we ran out of time
+        i)change the html document and use a "ran out of time" message for the player <!--see 10.c.i for reference-->
+    c)let the player know what the correct answer should have been
+        i)subwrapper jquery selector
+        ii).append
+        iii)html header element with message about correct answer 
+            *"the correct answer was:"
+        iv)plus question [
+            -game
+            -.currentQuestion
+        ]
+        v).correctAnswer
+        vi)plus closing html header element
+    d)create a way to send the player to the results screen if it is the final question or to the next question
+        *use same code from 10.d.i 
+    <!--move to 8-->
+
+
 8)Work on results method
+    a)clear the interval
+    b)create a message after the player finishes the game
+        -subwrapper jquery selector, html, "all done" message in a header format
+    c)create a way to tell the player what the correct score was 
+        i)subwrapper jquery selector  
+        ii)append
+        iii)correct string
+        vi)plus game dot correct
+    d)create a way to tell the player what the incorrect score was 
+        i)subwrapper jquery selector
+        ii)append
+        iii)incorrect string
+        vi)plus game dot incorrect
+    e)create a way for unaswered questions
+        i)add a new property called unasnwered <!--place it on step 3-->
+        ii)go to timeUP function and add the unAnswered property <!--game.unanswered++-->
+        iii)on the reults function 
+            -subwrapper, append, h3, "unanswered:" , plus game dot unaswered, plus closing h3
+        <!--move to step12-->
 9)Work on click method
+    a)start with giving the e paramether for the click method function
+        i)clear the interval inside the function <!--we are clearing the interval because we don't want the timer to be running after we already clicked the button. We want it to stop at that point-->
+            *clearInterval
+            *(timer)
+        ii)create an if event <!--think on what is it that you clicked-->
+            *$, e.target, .data, "name", ==, questions, game, .currentQuestion, .correctAnswer {run the game funtion for correctly answered questions}, else {run the game.function of the incorrect answered questions}
+            <!--At this point go to 10 and 11 console log them with either win or lose message to make sure it is working-->
+
 10)Work on answeredCorrectly method
+    a)Clear the interval
+    b)add to correct value
+        i)game,.correct,++
+    c)changed the html file to reflect changes
+        i)$, #, subwrapper, .html, html-header-element, win-message
+    d)add a way to take the player to the next question, or determines whether the player is on the last question and if so takes the player to the results screen 
+        i)start with an if else statment 
+            -if, game, .currentQuestion, ==, questions, .length, -1 {setTimeout, game, .results, 3*1000}
+            -else {setTimeout, game, .nextQuestion, 3*1000}
+            <!--move to 11-->
+
 11)Work on answeredIncorrectly method
+    a)Clear the interval
+    b)add to correct value
+        i)game,.incorrect,++
+    c)changed the html file to reflect changes
+        i)$, #, subwrapper, .html, html-header-element, lose-message
+    <!--let the player know what the correct answer should have been, use 7.c as reference-->
+    d)add a way to take the player to the next question, or determines whether the player is on the last question and if so takes the player to the results screen 
+        i)start with an if statment 
+            -if, game, .currentQuestion, ==, questions, .length, -1 {setTimeout, game, .results, 3*1000}
+            -else {setTimeout, game, .nextQuestion, 3*1000}
+    <!--move to 6-->
+
 12)Work on reset method
+    a)set everything back to the original amount 
+        i) game, .currentQuestion, equal, 0
+        ii) game, .counter, equal, 0
+        iii) game, .correct, equal, 0 
+        iv) game, .incorrect, equal, 0
+        v) game, .unanswered, equal, 0
+        vi) game, .loadQuestion()
+    b) add a new button to results page 
+        -subwrapper, append,button-start-tag, id=reset for button, actual text for button <!--Reset-->, button closing tag
+    c)create a new on click event <!--this will go on top of the questions variable-->
+        -$, document, .on, click, reset id, function {game.reset()}
+    d)Make sure the timer displays 
+        i)on part 5.b: subwrapper, html, h2, time remaining, span tag opening, id=counter, text inside the h2 would be the number 30, span closure, word seconds, h2 closing tag
 
 
  
