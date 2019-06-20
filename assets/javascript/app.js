@@ -78,8 +78,4 @@ const questions = [{
     question:"What month was Harry born in?",
     answers: ["December","July","June","February","March","August"],
     correctAnswer:"July",
-    image:"assets/images/question_mark.ico"},
-    
-    
-
-}]
+    image:"assets/images/question_mark.ico"}]
