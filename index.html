@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="jumbotron text-center">
-            <h1 class="tittle-game">Trivia Game</h1>
+            <h1 class="tittle-game" id="wrapper">Trivia Game</h1>
         </div>
     </header>
 
@@ -26,17 +26,21 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card-body">
-                    <p class="card-text">
+                    <p class="card-text" id="instructions">
                         <h6>You have a limited amount of time to finish the trivia questions. The game will end when the timer runs and your answers will let you know if you are a true harry potter fan. </h6>
                     </p>
+                    <div id="subwrapper">
+                    <button id="start">Start</button>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </div>
     <!--jQuery stuff-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!--Main game logic-->
-    <script src="../unit-4-game/assets/javascript/game.js"></script>
+    <script src="../TriviaGame/assets/javascript/app.js"></script>
 </body>
 
 </html>

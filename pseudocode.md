@@ -1,26 +1,26 @@
 Timer starts as soon as you click the start button. If you click on the right answer then the game will display a correct or incorrect message depending on 
 
 HTML psedudocode
-1)create a div with an id of wrapper, then add the title of the game
-2)create a second div with a subwrapper id, then create a button with the words "start" 
-    -make sure the button is inside the subwrapper div and not in the wrapper div
-3) close the initial wrapper div and add the jQuery tag and the  js tag 
+1)create a div with an id of wrapper, then add the title of the game ✅ 
+2)create a second div with a subwrapper id, then create a button with the words "start" ✅ 
+    -make sure the button is inside the subwrapper div and not in the wrapper div✅ 
+3) close the initial wrapper div and add the jQuery tag and the  js tag ✅ 
 
 JS 
-1)create a method to check if you propertly linked the js file with your html file 
-    a)use the click funtion to disapear the start button
+1)create a method to check if you propertly linked the js file with your html file ✅
+    a)use the click funtion to disapear the start button✅
     b)include a way to run the game function with the loadQuestion method
-    c)create a way to tell the player if got a question correct or incorrect after the button asnwer is being pressed <!--work here after completing 5.c.viii-->
+    c)create a way to tell the player if they got a question correct or incorrect after the button asnwer is being pressed <!--work here after completing 5.c.viii-->
         i)start with a jquery click event
             *the jquery selector will be document
             *the parameters for the on click event will be click, .answer-button, function(e)
             *inside the function write game dot clicked (e)
                 *note: e is used to store an event. So if we are passing e onto this function and also passing e onto the click we are actually passing through the event. We are passing through what is being click <!--move to 9)click method-->
 
-2)create questions and asnwers you would like to display on your game, also get include the image to the gif you would like to display if the player answered right
-    a)create an array with the questions and answers for your game (make sure you use name this variable something that will not confuse you).  
-        i)the questions an asnwers will be the object of the array
-        ii)for this section you can use the following objects: question, answers, correctAnswers, image
+2)create questions and asnwers you would like to display on your game, also get include the image to the gif you would like to display if the player answered right ✅
+    a)create an array with the questions and answers for your game (make sure you name this variable something that will not confuse you).  ✅
+        i)the questions and asnwers will be the object of the array✅
+        ii)for this section you can use the following objects: question, answers, correctAnswers, image✅
 3)create a game object with the following properties: questions, currentQuestion, counter(<!--here you are setting up how much time you want the player to have in order to answer a question-->), correct(<!--keeps track of correct answers-->), incorrect(<!--keeps track of incorrect answers the player makes-->), also include the following methods: a countdown method, a load question method, a next question method, a timeup method, a results method, a click method, an asnwered correctly method, an answeredIncorrectly method, and a reset method
     a)specific instructions 
         i)variable  variableName   equalsign    curlyBracketOpening     property        colon       string/number(related to what property you are using)       commaToseparateProperties   curlyBracketclosure
