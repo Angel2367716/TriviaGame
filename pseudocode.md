@@ -21,10 +21,10 @@ JS
     a)create an array with the questions and answers for your game (make sure you name this variable something that will not confuse you).  ✅
         i)the questions and asnwers will be the object of the array✅
         ii)for this section you can use the following objects: question, answers, correctAnswers, image✅
-3)create a game object with the following properties: questions, currentQuestion, counter(<!--here you are setting up how much time you want the player to have in order to answer a question-->), correct(<!--keeps track of correct answers-->), incorrect(<!--keeps track of incorrect answers the player makes-->), also include the following methods: a countdown method, a load question method, a next question method, a timeup method, a results method, a click method, an asnwered correctly method, an answeredIncorrectly method, and a reset method
-    a)specific instructions 
-        i)variable  variableName   equalsign    curlyBracketOpening     property        colon       string/number(related to what property you are using)       commaToseparateProperties   curlyBracketclosure
-    b)method syntax: {nameOfMethod: function (){}}
+3)create a game object with the following properties: questions, currentQuestion, counter(<!--here you are setting up how much time you want the player to have in order to answer a question-->), correct(<!--keeps track of correct answers-->), incorrect(<!--keeps track of incorrect answers the player makes-->), also include the following methods: a countdown method, a load question method, a next question method, a timeup method, a results method, a click method, an asnwered correctly method, an answeredIncorrectly method, and a reset method✅
+    a)specific instructions ✅
+        i)variable  variableName   equalsign    curlyBracketOpening     property        colon       variable/number(related to what property you are using)       commaToseparateProperties   curlyBracketclosure
+    b)method syntax: {nameOfMethod: function (){}}✅<!--you can put the method inside the variable game, that way you don't dry your code by repeating the method syntax (aka const game = {countdown: function(){},click:(){}, etc...};-->
 4)Work on countdown method
     a)create a way to decrease the amount of time on the counter property
         i)you need to use the game dot property and include a decrement for that variable

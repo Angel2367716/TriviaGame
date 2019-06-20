@@ -79,3 +79,23 @@ const questions = [{
     answers: ["December","July","June","February","March","August"],
     correctAnswer:"July",
     image:"assets/images/question_mark.ico"}]
+
+//Game Object
+const game = {
+    questions:questions,
+    currentQuestion:0,
+    counter:25,
+    correct:0,
+    incorrect:0,
+    
+    //Methods w/ functions 
+    countdown: function(){},
+    loadQuestion: function(){},
+    nextQuestion: function(){},
+    timesup: function(){},
+    results: function(){},
+    click: function(){},
+    answeredCorrectly: function(){},
+    answeredIncorrectly: function(){},
+    reset: function(){}
+};
