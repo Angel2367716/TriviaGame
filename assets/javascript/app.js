@@ -1,5 +1,6 @@
 $("#start").on('click', function(){
     $("#start").remove();
+    // $("#instructions").remove();
 })
 
 //Array of questions and answers 
@@ -89,7 +90,14 @@ const game = {
     incorrect:0,
     
     //Methods w/ functions 
-    countdown: function(){},
+    countdown: function(){
+        game.counter--;
+        $("#counter").html(game.countdown);
+        if(game.counter<=0){
+            console.log("Times UP!");
+        }
+
+    },
     loadQuestion: function(){},
     nextQuestion: function(){},
     timesup: function(){},

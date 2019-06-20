@@ -26,11 +26,11 @@ JS
         i)variable  variableName   equalsign    curlyBracketOpening     property        colon       variable/number(related to what property you are using)       commaToseparateProperties   curlyBracketclosure
     b)method syntax: {nameOfMethod: function (){}}✅<!--you can put the method inside the variable game, that way you don't dry your code by repeating the method syntax (aka const game = {countdown: function(){},click:(){}, etc...};-->
 4)Work on countdown method
-    a)create a way to decrease the amount of time on the counter property
-        i)you need to use the game dot property and include a decrement for that variable
+    a)create a way to decrease the amount of time on the counter property✅
+        i)you need to use the game dot property and include a decrement for that variable✅
     b)make sure the countdown method also decreases the time on the screen
         i)jQuery selector   dot     type of docto   (game dot property you are referring to)
-            *the property you are referring will be the same as the jQuery selector, just think about what you are trying to change on the html file
+            *the property you are referring will be the same as the jQuery selector, just think about what you are trying to change on the html file✅
     c)create an if statemnt to tell the game if the time has run out. You can use the game counter less than or equal to zero 
         i)console log the timeUp property to make sure it is working, but before work on the load up method
 5)Work on loadQuestion  method
