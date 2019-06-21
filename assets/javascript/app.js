@@ -1,6 +1,8 @@
 $("#start").on('click', function(){
+    $("#instructions").remove();
     $("#start").remove();
-    // $("#instructions").remove();
+
+$(document).on(click.answer-button function(e){}
 })
 
 //Array of questions and answers 
@@ -100,6 +102,9 @@ const game = {
     loadQuestion: function(){
         timer = setInterval (game.countdown, 1000);
         $("#subwrapper").append("<div>" + questions[game.currentQuestion].questions+"</div>");
+        for (let i=0; i<question[game.currentQuestion].answers.length; i++){
+        $("#subwrapper").append('<button> class="answer-button" id="button-'+ i + '"data-name="'+ questions[game.currentQuestion].answers[i] + '" >' + questions[game.currentQuestion].answers[i]+'</button>');
+        }
     },
     nextQuestion: function(){},
     timesup: function(){},
