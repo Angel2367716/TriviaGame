@@ -96,9 +96,11 @@ const game = {
         if(game.counter<=0){
             console.log("Times UP!");
         }
-
     },
-    loadQuestion: function(){},
+    loadQuestion: function(){
+        timer = setInterval (game.countdown, 1000);
+        $("#subwrapper").append("<div>" + questions[game.currentQuestion].questions+"</div>");
+    },
     nextQuestion: function(){},
     timesup: function(){},
     results: function(){},

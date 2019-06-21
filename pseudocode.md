@@ -31,21 +31,22 @@ JS
     b)make sure the countdown method also decreases the time on the screen
         i)jQuery selector   dot     type of docto   (game dot property you are referring to)
             *the property you are referring will be the same as the jQuery selector, just think about what you are trying to change on the html file✅
-    c)create an if statemnt to tell the game if the time has run out. You can use the game counter less than or equal to zero 
+    c)create an if statemnt to tell the game if the time has run out. You can use the game counter less than or equal to zero ✅
+        <!--*****************-->
         i)console log the timeUp property to make sure it is working, but before work on the load up method
 5)Work on loadQuestion  method
     a)create a way to reset the timer whenever a new question is loaded
-        i) use timer and equal it to setInterval
-        ii)inside the time interval create a way in which you are telling the code to run the game countdown function after every second or a thousand miliseconds*
+        i) use timer and equal it to setInterval✅
+        ii)inside the time interval create a way in which you are telling the code to run the game countdown function after every second or a thousand miliseconds*✅
             *you are going to lower the counter and post the counter to the page and it will also check if the counter is less than or equal to zero 
     b)post a new question to the page
-        i)use a jQuery selector and choose the subwraper
-        ii)append and open parenthesis
-        iii)inside the parenthesis choose the html element to display the question and add the question property of the game variable and open a pair of brackets
-        iv)on the brakets you will need to choose the appropiate object you want the code to select and close the braket
-            *select the "game" function and add it with a period to the "currentQuestion and close the braket
-        v)follow the closed braket by adding a dot and including the same property you used on 5.b.iii
-        vi)then use the plus sign to close the html element you chose on 5.b.iii
+        i)use a jQuery selector and choose the subwraper ✅
+        ii)append and open parenthesis✅
+        iii)inside the parenthesis choose the html element to display the question and add the question property of the game variable and open a pair of brackets ✅
+        iv)on the brakets you will need to choose the appropiate object you want the code to select and close the braket✅
+            *select the "game" function and add it with a period to the "currentQuestion and close the braket✅
+        v)follow the closed braket by adding a dot and including the same property you used on 5.b.iii✅
+        vi)then use the plus sign to close the html element you chose on 5.b.iii✅
     c)post all the answers on the page as buttons
         i)create a for loop that will keep going for as long as i is less than the amount of answers that there are, so less than four <!--i=0,i<question[game.Currentquestion].answers.length, i++-->. Then use the jQuery selector for the subrapper to append  the buttons
         i)inside the append parenthesis open a single quotation mark and use the button html element, give it a class of answer-button, an id of button-, close the single quotation mark
