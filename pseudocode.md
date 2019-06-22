@@ -86,24 +86,24 @@ JS
         v).correctAnswer✅
         vi)plus closing html header element✅
     d)create a way to send the player to the results screen if it is the final question or to the next question
-        *use same code from 10.d.i 
+        *use same code from 10.d.i ✅
     <!--move to 8-->
 
 
 8)Work on results method
-    a)clear the interval
-    b)create a message after the player finishes the game
+    a)clear the interval✅
+    b)create a message after the player finishes the game✅
         -subwrapper jquery selector, html, "all done" message in a header format
-    c)create a way to tell the player what the correct score was 
-        i)subwrapper jquery selector  
-        ii)append
-        iii)correct string
-        vi)plus game dot correct
-    d)create a way to tell the player what the incorrect score was 
-        i)subwrapper jquery selector
-        ii)append
-        iii)incorrect string
-        vi)plus game dot incorrect
+    c)create a way to tell the player what the correct score was ✅
+        i)subwrapper jquery selector  ✅
+        ii)append✅
+        iii)correct string✅
+        vi)plus game dot correct✅
+    d)create a way to tell the player what the incorrect score was ✅
+        i)subwrapper jquery selector✅
+        ii)append✅
+        iii)incorrect string✅
+        vi)plus game dot incorrect✅
     e)create a way for unaswered questions
         i)add a new property called unasnwered <!--place it on step 3-->
         ii)go to timeUP function and add the unAnswered property <!--game.unanswered++-->

@@ -141,7 +141,12 @@ const game = {
             setTimeout(game.nextQuestion,2*1000)
                 }
     },
-    results: function () { },
+    results: function () {
+        clearInterval(timer);
+        $("#subwrapper").html("<h3>All done");
+        $("#subwrapper").append("Correct:" + game.correct);
+        $("#subwrapper").append("Inorrect:" + game.incorrect);
+     },
     clicked: function (e) {
         clearInterval(timer);
         if ($(e.target).data("name") == questions[game.currentQuestion].correctAnswer) {
