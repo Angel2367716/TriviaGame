@@ -1,8 +1,11 @@
 $("#start").on('click', function(){
-    $("#instructions").remove();
     $("#start").remove();
+    $("#instructions").remove();
+    game.loadQuestion();
 
-$(document).on(click.answer-button function(e){}
+})
+$(document).on('click', '.answer-button', function(e){
+    game.clicked(e);
 })
 
 //Array of questions and answers 
@@ -94,22 +97,32 @@ const game = {
     //Methods w/ functions 
     countdown: function(){
         game.counter--;
-        $("#counter").html(game.countdown);
+        $("#counter").html(game.counter);
         if(game.counter<=0){
             console.log("Times UP!");
+            game.timeUp();
         }
     },
     loadQuestion: function(){
         timer = setInterval (game.countdown, 1000);
-        $("#subwrapper").append("<div>" + questions[game.currentQuestion].questions+"</div>");
-        for (let i=0; i<question[game.currentQuestion].answers.length; i++){
-        $("#subwrapper").append('<button> class="answer-button" id="button-'+ i + '"data-name="'+ questions[game.currentQuestion].answers[i] + '" >' + questions[game.currentQuestion].answers[i]+'</button>');
+        $("#subwrapper").html("<h2>" + questions[game.currentQuestion].question+"</h2>");
+        for (let i=0; i<questions[game.currentQuestion].answers.length; i++){
+        $("#subwrapper").append('<button class="answer-button" id="button-'+ i + '"data-name="'+ questions[game.currentQuestion].answers[i] + '" >' + questions[game.currentQuestion].answers[i]+'</button>');
         }
     },
-    nextQuestion: function(){},
-    timesup: function(){},
+    nextQuestion: function(){
+        game.counter=25;
+        $("#counter").html(game.counter);
+        game.currentQuestion++;
+        game.loadQuestion();
+    },
+    timeUp: function(){
+    },
     results: function(){},
-    click: function(){},
+    clicked: function(e){
+        clearInterval(timer);      
+
+    },
     answeredCorrectly: function(){},
     answeredIncorrectly: function(){},
     reset: function(){}

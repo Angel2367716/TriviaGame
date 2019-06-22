@@ -10,7 +10,7 @@ JS
 1)create a method to check if you propertly linked the js file with your html file ✅
     a)use the click funtion to disapear the start button✅
     b)include a way to run the game function with the loadQuestion method
-    c)create a way to tell the player if they got a question correct or incorrect after the button asnwer is being pressed <!--work here after completing 5.c.viii-->
+    c)create a way to tell the player if they got a question correct or incorrect after the button asnwer is being pressed <!--work here after completing 5.c.viii-->✅
         i)start with a jquery click event
             *the jquery selector will be document
             *the parameters for the on click event will be click, .answer-button, function(e)
@@ -48,30 +48,26 @@ JS
         v)follow the closed braket by adding a dot and including the same property you used on 5.b.iii✅
         vi)then use the plus sign to close the html element you chose on 5.b.iii✅
     c)post all the answers on the page as buttons
-        i)create a for loop that will keep going for as long as i is less than the amount of answers that there are, so less than four <!--i=0,i<question[game.Currentquestion].answers.length, i++-->. Then use the jQuery selector for the subrapper to append  the buttons
-        i)inside the append parenthesis open a single quotation mark and use the button html element, give it a class of answer-button, an id of button-, close the single quotation mark
+        i)create a for loop that will keep going for as long as i is less than the amount of answers that there are, so less than four. Then use the jQuery selector for the subwrapper to append  the buttons
+        i)inside the append parenthesis open a single quotation mark and use the button html element, give it a class of answer-button, an id of button-, close the single quotation mark ✅
         ii) plus sign, include the answer of the current question <!--i-->"
-        iii) plus sign and open a single quotation mark, open a single double quotation mark, include a string called data-name= <!--make sure you open a string by putting a single double quotation mark--> and close the single quotation mark
+        iii) plus sign and open a single quotation mark, open a single double quotation mark, include a string called data-name= <!--make sure you open a string by putting a single double quotation mark--> and close the single quotation mark ✅
         iv) plus sign, question property <!--the question property starts with a single quotation bracket--> and open a pair of brackets <!--[Inside the brackets you will add the game dot currentQuestions]-->
-        v) add a dot to include "answers" followed by the parameter of the answer of the current question
-        vi)plus sign, open single quotation, close double quotation from 5.c.iii, close the button <!--'>'-->,close single quotation
-        vi)plus sign <!--question-->, open braket, game dot currentQuestion, close braket, 
-        vii)dot answers open braket, i, close braket
-        viii)plus sign, close entire button <!--'</button>'--> *this will post our button to the page anytime that we have the load question function set.
+        v) add a dot to include "answers" followed by the parameter of the answer of the current question✅
+        vi)plus sign, open single quotation, close double quotation from 5.c.iii, close the button <!--'>'-->,close single quotation✅
+        vi)plus sign <!--question-->, open braket, game dot currentQuestion, close braket, ✅
+        vii)dot answers open braket, i, close braket✅
+        viii)plus sign, close entire button <!--'</button>'--> *this will post our button to the page anytime that we have the load question function set.✅
             *data-name: stores data within an element
                 *we are puttin the answer within the data element
             *we are storing the answer at i within this button
         <!--move to 1.c-->
              
 6)Work on  nextQuestion method
-    a)set counter back to 30 <!--this way the counter will go back to 30 after each question, otherwise the seconds from previous question would remain -->
-        i)game, .counter, equals, 30
-    b)set the html document to display the correct number of seconds
-        i)$, #, counter, .html, game, .counter
+    a)set counter back to 30 <!--this way the counter will go back to 30 after each question, otherwise the seconds from previous question would remain -->✅
+    b)set the html document to display the correct number of seconds✅
     c)use an incrementor for the current question
-    d)load the question 
-        i)game
-        ii).loadQuestion()
+    d)load the question ✅
     <!--move to 7-->
 
 7)Work on timeUp method
