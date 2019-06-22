@@ -132,6 +132,14 @@ const game = {
         game.loadQuestion();
     },
     timeUp: function () {
+        clearInterval(timer);
+        $("#subwrapper").html("<h2>You ran out of time!!");
+        $("#subwrapper").append("<h3>The correct answer was:" + questions[game.currentQuestion].correctAnswer + "</h3>");
+        if (game.currentQuestion==questions.length-1){
+            setTimeout(game.results,2*1000);
+        } else {
+            setTimeout(game.nextQuestion,2*1000)
+                }
     },
     results: function () { },
     clicked: function (e) {
@@ -147,13 +155,25 @@ const game = {
         console.log("You got it right")
         clearInterval(timer);
         game.correct++
-        $("#subwrapper").html("<h2>You Win")
+        $("#subwrapper").html("<h2>You Got It Right!")
+        $("#subwrapper").append("<h3>The correct answer was:" + questions[game.currentQuestion].correctAnswer + "</h3>");
+        if (game.currentQuestion==questions.length-1){
+            setTimeout(game.results,2*1000);
+        } else {
+            setTimeout(game.nextQuestion,2*1000)
+                }
     },
     answeredIncorrectly: function () {
         console.log("You got it wrong")
         clearInterval(timer);
         game.incorrect++
-        $("#subwrapper").html("<h2>You lose")
+        $("#subwrapper").html("<h2>You Got It Wrong!</h2>");
+        // $("#subwrapper").append("<h2>The correct answer was:" + questio[game.currentQuestion].correctAnswer + "</h2>");
+        if (game.currentQuestion==questions.length-1){
+            setTimeout(game.results,2*1000);
+        } else {
+            setTimeout(game.nextQuestion,2*1000)
+                }
     },
     reset: function () { }
 };

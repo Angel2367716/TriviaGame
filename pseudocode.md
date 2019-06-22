@@ -76,15 +76,15 @@ JS
         i)change the html document and use a "ran out of time" message for the player <!--see 10.c.i for reference-->✅
     c)let the player know what the correct answer should have been✅
         i)subwrapper jquery selector
-        ii).append
+        ii).append✅
         iii)html header element with message about correct answer 
-            *"the correct answer was:"
+            *"the correct answer was:"✅
         iv)plus question [
             -game
-            -.currentQuestion
+            -.currentQuestion✅
         ]
-        v).correctAnswer
-        vi)plus closing html header element
+        v).correctAnswer✅
+        vi)plus closing html header element✅
     d)create a way to send the player to the results screen if it is the final question or to the next question
         *use same code from 10.d.i 
     <!--move to 8-->
@@ -126,22 +126,22 @@ JS
     c)changed the html file to reflect changes
         i)$, #, subwrapper, .html, html-header-element, win-message✅
     d)add a way to take the player to the next question, or determines whether the player is on the last question and if so takes the player to the results screen 
-        i)start with an if else statment 
+        i)start with an if else statment ✅
             -if, game, .currentQuestion, ==, questions, .length, -1 {setTimeout, game, .results, 3*1000}
             -else {setTimeout, game, .nextQuestion, 3*1000}
             <!--move to 11-->
 
 11)Work on answeredIncorrectly method
-    a)Clear the interval
-    b)add to correct value
-        i)game,.incorrect,++
+    a)Clear the interval ✅
+    b)add to correct value✅
+        i)game,.incorrect,++✅
     c)changed the html file to reflect changes
-        i)$, #, subwrapper, .html, html-header-element, lose-message
-    <!--let the player know what the correct answer should have been, use 7.c as reference-->
-    d)add a way to take the player to the next question, or determines whether the player is on the last question and if so takes the player to the results screen 
-        i)start with an if statment 
+        i)$, #, subwrapper, .html, html-header-element, lose-message ✅
+    <!--let the player know what the correct answer should have been, use 7.c as reference-->✅
+    d)add a way to take the player to the next question, or determines whether the player is on the last question and if so takes the player to the results screen ✅
+        i)start with an if statment✅ 
             -if, game, .currentQuestion, ==, questions, .length, -1 {setTimeout, game, .results, 3*1000}
-            -else {setTimeout, game, .nextQuestion, 3*1000}
+            -else {setTimeout, game, .nextQuestion, 3*1000}✅
     <!--move to 6-->
 
 12)Work on reset method
