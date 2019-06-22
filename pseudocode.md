@@ -15,7 +15,7 @@ JS
             *the jquery selector will be document
             *the parameters for the on click event will be click, .answer-button, function(e)
             *inside the function write game dot clicked (e)
-                *note: e is used to store an event. So if we are passing e onto this function and also passing e onto the click we are actually passing through the event. We are passing through what is being click <!--move to 9)click method-->
+                *note: e is used to store an event. So if we are passing e onto this function and also passing e onto the click we are actually passing through the event. We are passing through what is being click <!--move to 9)click method-->✅
 
 2)create questions and asnwers you would like to display on your game, also get include the image to the gif you would like to display if the player answered right ✅
     a)create an array with the questions and answers for your game (make sure you name this variable something that will not confuse you).  ✅
@@ -70,11 +70,11 @@ JS
     d)load the question ✅
     <!--move to 7-->
 
-7)Work on timeUp method
-    a)clear interval timer
+7)Work on timeUp method✅
+    a)clear interval timer✅
     b)set subwrapper to tell us that we ran out of time
-        i)change the html document and use a "ran out of time" message for the player <!--see 10.c.i for reference-->
-    c)let the player know what the correct answer should have been
+        i)change the html document and use a "ran out of time" message for the player <!--see 10.c.i for reference-->✅
+    c)let the player know what the correct answer should have been✅
         i)subwrapper jquery selector
         ii).append
         iii)html header element with message about correct answer 
@@ -110,21 +110,21 @@ JS
         iii)on the reults function 
             -subwrapper, append, h3, "unanswered:" , plus game dot unaswered, plus closing h3
         <!--move to step12-->
-9)Work on click method
-    a)start with giving the e paramether for the click method function
+9)Work on click method ✅
+    a)start with giving the e paramether for the click method function ✅
         i)clear the interval inside the function <!--we are clearing the interval because we don't want the timer to be running after we already clicked the button. We want it to stop at that point-->
-            *clearInterval
-            *(timer)
-        ii)create an if event <!--think on what is it that you clicked-->
+            *clearInterval✅
+            *(timer)✅
+        ii)create an if event <!--think on what is it that you clicked-->✅
             *$, e.target, .data, "name", ==, questions, game, .currentQuestion, .correctAnswer {run the game funtion for correctly answered questions}, else {run the game.function of the incorrect answered questions}
             <!--At this point go to 10 and 11 console log them with either win or lose message to make sure it is working-->
 
 10)Work on answeredCorrectly method
-    a)Clear the interval
-    b)add to correct value
+    a)Clear the interval✅
+    b)add to correct value✅
         i)game,.correct,++
     c)changed the html file to reflect changes
-        i)$, #, subwrapper, .html, html-header-element, win-message
+        i)$, #, subwrapper, .html, html-header-element, win-message✅
     d)add a way to take the player to the next question, or determines whether the player is on the last question and if so takes the player to the results screen 
         i)start with an if else statment 
             -if, game, .currentQuestion, ==, questions, .length, -1 {setTimeout, game, .results, 3*1000}
