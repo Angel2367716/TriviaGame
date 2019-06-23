@@ -152,10 +152,10 @@ JS
         iv) game, .incorrect, equal, 0✅
         v) game, .unanswered, equal, 0✅
         vi) game, .loadQuestion()✅
-    b) add a new button to results page 
-        -subwrapper, append,button-start-tag, id=reset for button, actual text for button <!--Reset-->, button closing tag
+    b) add a new button to results page ✅
+        -subwrapper, append,button-start-tag, id=reset for button, actual text for button <!--Reset-->, button closing tag✅
     c)create a new on click event <!--this will go on top of the questions variable-->
-        -$, document, .on, click, reset id, function {game.reset()}
+        -$, document, .on, click, reset id, function {game.reset()}✅
     d)Make sure the timer displays 
         i)on part 5.b: subwrapper, html, h2, time remaining, span tag opening, id=counter, text inside the h2 would be the number 30, span closure, word seconds, h2 closing tag
 
