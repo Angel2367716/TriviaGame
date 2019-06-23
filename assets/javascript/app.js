@@ -8,8 +8,8 @@ $(document).on('click', '.answer-button', function (e) {
     game.clicked(e);
 });
 
-$(document).on('click', "#reset", function(){
-    game.reset()
+$(document).on("click",'#reset', function(){
+    game.reset();
 });
 
 //Array of questions and answers 
@@ -28,7 +28,7 @@ const questions = [{
 
 {
     question: "What does the Sorcerer's Stone do?",
-    answers: ["It makes sure that you win every duel", "It makes you invisble", "It makes you invincible", "It makes you immortal", "It kills all of your enemies", "It haunts your enemies dreams"],
+    answers: ["It makes sure that you win every duel", "It makes you invisible", "It makes you invincible", "It makes you immortal", "It kills all of your enemies", "It haunts your enemies dreams"],
     correctAnswer: "It makes you immortal",
     image: "assets/images/question_mark.ico"
 },
@@ -154,7 +154,7 @@ const game = {
         $("#subwrapper").append("<h3>Correct:" + game.correct+"</h3>");
         $("#subwrapper").append("<h3>Inorrect:" + game.incorrect+"</h3>");
         $("#subwrapper").append("<h3>Unanswered:"+game.unanswered+"</h3>");
-        $("#subwrapper").append('<button id="reset:">Reset</button>');
+        $("#subwrapper").append('<button id="reset">Reset</button>');
      },
     clicked: function (e) {
         clearInterval(timer);
@@ -178,7 +178,7 @@ const game = {
                 }
     },
     answeredIncorrectly: function () {
-        console.log("You got it wrong")
+        console.log("You got it wrong");
         clearInterval(timer);
         game.incorrect++
         $("#subwrapper").html("<h2>You Got It Wrong!</h2>");
@@ -190,6 +190,7 @@ const game = {
                 }
     },
     reset: function () {
+        game.currentQuestion=0;
         game.counter=0;
         game.correct=0;
         game.incorrect=0;
