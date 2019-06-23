@@ -141,11 +141,11 @@ const game = {
         clearInterval(timer);
         game.unanswered++;
         $("#subwrapper").html("<h2>You ran out of time!!</h2>");
-        $("#subwrapper").append("<h3>The correct answer was:" + questions[game.currentQuestion].correctAnswer + "</h3>");
+        $("#subwrapper").append("<h3>The correct answer was:"+ questions[game.currentQuestion].correctAnswer + "</h3>");
         if (game.currentQuestion==questions.length-1){
-            setTimeout(game.results,1000);
+            setTimeout(game.results,1500);
         } else {
-            setTimeout(game.nextQuestion,1000)
+            setTimeout(game.nextQuestion,1500)
                 }
     },
     results: function () {
@@ -172,9 +172,9 @@ const game = {
         $("#subwrapper").html("<h2>You Got It Right!")
         $("#subwrapper").append("<h3>The correct answer was:" + questions[game.currentQuestion].correctAnswer + "</h3>");
         if (game.currentQuestion==questions.length-1){
-            setTimeout(game.results,1000);
+            setTimeout(game.results,1500);
         } else {
-            setTimeout(game.nextQuestion,1000)
+            setTimeout(game.nextQuestion,1500)
                 }
     },
     answeredIncorrectly: function () {
@@ -182,11 +182,11 @@ const game = {
         clearInterval(timer);
         game.incorrect++
         $("#subwrapper").html("<h2>You Got It Wrong!</h2>");
-        // $("#subwrapper").append("<h2>The correct answer was:" + questio[game.currentQuestion].correctAnswer + "</h2>");
+        $("#subwrapper").append("<h3>The Correct Answer Was:" + questions[game.currentQuestion].correctAnswer + "</h3>");
         if (game.currentQuestion==questions.length-1){
-            setTimeout(game.results,1000);
+            setTimeout(game.results,1500);
         } else {
-            setTimeout(game.nextQuestion,1000)
+            setTimeout(game.nextQuestion,1500)
                 }
     },
     reset: function () {
