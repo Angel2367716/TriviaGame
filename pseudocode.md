@@ -157,7 +157,7 @@ JS
     c)create a new on click event <!--this will go on top of the questions variable-->
         -$, document, .on, click, reset id, function {game.reset()}✅
     d)Make sure the timer displays 
-        i)on part 5.b: subwrapper, html, h2, time remaining, span tag opening, id=counter, text inside the h2 would be the number 30, span closure, word seconds, h2 closing tag
+        i)on part 5.b: subwrapper, html, h2, time remaining, span tag opening, id=counter, text inside the h2 would be the number 30, span closure, word seconds, h2 closing tag✅
 
 
  

@@ -13,6 +13,24 @@ background-size: cover
 color: inherit;
 }
 
+button{
+font-weight: bold;
+  font-size: 20px;
+/* background-image: -webkit-linear-gradient(15deg, #ff0000, #070707);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;*/
+-webkit-animation: hue 10s infinite linear; 
+
+background-size:cover;
+  background-color: rgba(165, 3, 3, 0.5);
+color: inherit;
+}
+
+
+.tittle-game{
+  font-size: 50px;
+}
+
 
 p, h1, h2, h3, h4, h5, h6{
   font-weight: bold;
@@ -21,7 +39,7 @@ p, h1, h2, h3, h4, h5, h6{
   background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 60s infinite linear;
+  -webkit-animation: hue 50s infinite linear;
 }
 
 

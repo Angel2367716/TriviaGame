@@ -124,7 +124,7 @@ const game = {
         }
     },
     loadQuestion: function () {
-        timer = setInterval(game.countdown, 1000);
+        timer = setInterval(game.countdown, 950);
         $("#subwrapper").html("<h2>SECONDS REMAINING: <span id='counter'>10</span></h2>");
         $("#subwrapper").append("<h2>" + questions[game.currentQuestion].question + "</h2>");
         for (let i = 0; i < questions[game.currentQuestion].answers.length; i++) {
@@ -143,9 +143,9 @@ const game = {
         $("#subwrapper").html("<h2>You ran out of time!!</h2>");
         $("#subwrapper").append("<h3>The correct answer was:" + questions[game.currentQuestion].correctAnswer + "</h3>");
         if (game.currentQuestion==questions.length-1){
-            setTimeout(game.results,1500);
+            setTimeout(game.results,1000);
         } else {
-            setTimeout(game.nextQuestion,1500)
+            setTimeout(game.nextQuestion,1000)
                 }
     },
     results: function () {
@@ -172,9 +172,9 @@ const game = {
         $("#subwrapper").html("<h2>You Got It Right!")
         $("#subwrapper").append("<h3>The correct answer was:" + questions[game.currentQuestion].correctAnswer + "</h3>");
         if (game.currentQuestion==questions.length-1){
-            setTimeout(game.results,1500);
+            setTimeout(game.results,1000);
         } else {
-            setTimeout(game.nextQuestion,1500)
+            setTimeout(game.nextQuestion,1000)
                 }
     },
     answeredIncorrectly: function () {
@@ -184,9 +184,9 @@ const game = {
         $("#subwrapper").html("<h2>You Got It Wrong!</h2>");
         // $("#subwrapper").append("<h2>The correct answer was:" + questio[game.currentQuestion].correctAnswer + "</h2>");
         if (game.currentQuestion==questions.length-1){
-            setTimeout(game.results,1500);
+            setTimeout(game.results,1000);
         } else {
-            setTimeout(game.nextQuestion,1500)
+            setTimeout(game.nextQuestion,1000)
                 }
     },
     reset: function () {
