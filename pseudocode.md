@@ -33,7 +33,7 @@ JS
             *the property you are referring will be the same as the jQuery selector, just think about what you are trying to change on the html file✅
     c)create an if statemnt to tell the game if the time has run out. You can use the game counter less than or equal to zero ✅
         <!--*****************-->
-        i)console log the timeUp property to make sure it is working, but before work on the load up method
+        i)console log the timeUp property to make sure it is working, but before work on the load up method✅
 5)Work on loadQuestion  method
     a)create a way to reset the timer whenever a new question is loaded
         i) use timer and equal it to setInterval✅
@@ -105,10 +105,10 @@ JS
         iii)incorrect string✅
         vi)plus game dot incorrect✅
     e)create a way for unaswered questions
-        i)add a new property called unasnwered <!--place it on step 3-->
-        ii)go to timeUP function and add the unAnswered property <!--game.unanswered++-->
+        i)add a new property called unasnwered <!--place it on step 3-->✅
+        ii)go to timeUP function and add the unAnswered property <!--game.unanswered++-->✅
         iii)on the reults function 
-            -subwrapper, append, h3, "unanswered:" , plus game dot unaswered, plus closing h3
+            -subwrapper, append, h3, "unanswered:" , plus game dot unaswered, plus closing h3✅
         <!--move to step12-->
 9)Work on click method ✅
     a)start with giving the e paramether for the click method function ✅
@@ -116,19 +116,19 @@ JS
             *clearInterval✅
             *(timer)✅
         ii)create an if event <!--think on what is it that you clicked-->✅
-            *$, e.target, .data, "name", ==, questions, game, .currentQuestion, .correctAnswer {run the game funtion for correctly answered questions}, else {run the game.function of the incorrect answered questions}
+            *$, e.target, .data, "name", ==, questions, game, .currentQuestion, .correctAnswer {run the game funtion for correctly answered questions}, else {run the game.function of the incorrect answered questions}✅
             <!--At this point go to 10 and 11 console log them with either win or lose message to make sure it is working-->
 
 10)Work on answeredCorrectly method
     a)Clear the interval✅
     b)add to correct value✅
         i)game,.correct,++
-    c)changed the html file to reflect changes
+    c)changed the html file to reflect changes✅
         i)$, #, subwrapper, .html, html-header-element, win-message✅
     d)add a way to take the player to the next question, or determines whether the player is on the last question and if so takes the player to the results screen 
         i)start with an if else statment ✅
             -if, game, .currentQuestion, ==, questions, .length, -1 {setTimeout, game, .results, 3*1000}
-            -else {setTimeout, game, .nextQuestion, 3*1000}
+            -else {setTimeout, game, .nextQuestion, 3*1000}✅
             <!--move to 11-->
 
 11)Work on answeredIncorrectly method
@@ -145,13 +145,13 @@ JS
     <!--move to 6-->
 
 12)Work on reset method
-    a)set everything back to the original amount 
-        i) game, .currentQuestion, equal, 0
-        ii) game, .counter, equal, 0
-        iii) game, .correct, equal, 0 
-        iv) game, .incorrect, equal, 0
-        v) game, .unanswered, equal, 0
-        vi) game, .loadQuestion()
+    a)set everything back to the original amount ✅
+        i) game, .currentQuestion, equal, 0✅
+        ii) game, .counter, equal, 0✅
+        iii) game, .correct, equal, 0 ✅
+        iv) game, .incorrect, equal, 0✅
+        v) game, .unanswered, equal, 0✅
+        vi) game, .loadQuestion()✅
     b) add a new button to results page 
         -subwrapper, append,button-start-tag, id=reset for button, actual text for button <!--Reset-->, button closing tag
     c)create a new on click event <!--this will go on top of the questions variable-->

@@ -108,6 +108,7 @@ const game = {
     counter: 25,
     correct: 0,
     incorrect: 0,
+    unanswered:0,
 
     //Methods w/ functions 
     countdown: function () {
@@ -133,7 +134,8 @@ const game = {
     },
     timeUp: function () {
         clearInterval(timer);
-        $("#subwrapper").html("<h2>You ran out of time!!");
+        game.unanswered++;
+        $("#subwrapper").html("<h2>You ran out of time!!</h2>");
         $("#subwrapper").append("<h3>The correct answer was:" + questions[game.currentQuestion].correctAnswer + "</h3>");
         if (game.currentQuestion==questions.length-1){
             setTimeout(game.results,2*1000);
@@ -143,9 +145,10 @@ const game = {
     },
     results: function () {
         clearInterval(timer);
-        $("#subwrapper").html("<h3>All done");
-        $("#subwrapper").append("Correct:" + game.correct);
-        $("#subwrapper").append("Inorrect:" + game.incorrect);
+        $("#subwrapper").html("<h1><strong>All done</strong></h1>");
+        $("#subwrapper").append("<h3>Correct:" + game.correct+"</h3>");
+        $("#subwrapper").append("<h3>Inorrect:" + game.incorrect+"</h3>");
+        $("#subwrapper").append("<h3>Unanswered:"+game.unanswered+"</h3>");
      },
     clicked: function (e) {
         clearInterval(timer);
@@ -180,5 +183,11 @@ const game = {
             setTimeout(game.nextQuestion,2*1000)
                 }
     },
-    reset: function () { }
+    reset: function () {
+        game.counter=0;
+        game.correct=0;
+        game.incorrect=0;
+        game.unanswered=0;
+        game.loadQuestion();
+     }
 };
