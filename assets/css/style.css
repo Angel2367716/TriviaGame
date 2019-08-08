@@ -10,6 +10,7 @@ background-size: cover
 .jumbotron, .card {
   background-size:cover;
   background-color: rgba(100,100,100, 0.5);
+
 color: inherit;
 }
 
@@ -37,12 +38,14 @@ color: inherit;
 
 p, h1, h2, h3, h4, h5, h6{
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   color: #f35626;
-  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  /* background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a); */
+  background-image: -webkit-linear-gradient(92deg, #35140a, #493518);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 50s infinite linear;
+  -webkit-animation: hue 10s infinite linear;
 }
 
 

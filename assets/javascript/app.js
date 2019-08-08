@@ -109,7 +109,7 @@ const questions = [{
 const game = {
     questions: questions,
     currentQuestion: 0,
-    counter: 10,
+    counter: 20,
     correct: 0,
     incorrect: 0,
     unanswered:0,
@@ -125,14 +125,14 @@ const game = {
     },
     loadQuestion: function () {
         timer = setInterval(game.countdown, 950);
-        $("#subwrapper").html("<h2>SECONDS REMAINING: <span id='counter'>10</span></h2>");
+        $("#subwrapper").html("<h2>SECONDS REMAINING: <span id='counter'>20</span></h2>");
         $("#subwrapper").append("<h2>" + questions[game.currentQuestion].question + "</h2>");
         for (let i = 0; i < questions[game.currentQuestion].answers.length; i++) {
             $("#subwrapper").append('<button class="answer-button" id="button-' + i + '"data-name="' + questions[game.currentQuestion].answers[i] + '" >' + questions[game.currentQuestion].answers[i] + '</button>');
         }
     },
     nextQuestion: function () {
-        game.counter = 10;
+        game.counter = 20;
         $("#counter").html(game.counter);
         game.currentQuestion++;
         game.loadQuestion();
