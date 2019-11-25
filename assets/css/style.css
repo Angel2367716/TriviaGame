@@ -35,8 +35,12 @@ color: inherit;
   0px 34px 30px rgba(0,0,0,0.1);
 }
 
+h2 {
+  color:#f35626;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 
-p, h1, h2, h3, h4, h5, h6{
+p, h1, h3, h4, h5, h6{
   font-weight: bold;
   font-size: 25px;
   color: #f35626;
