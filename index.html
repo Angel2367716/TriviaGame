@@ -11,39 +11,58 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-        <!--jQuery stuff-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!--jQuery stuff-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 </head>
 
 <body>
-    <header>
-        <div class="jumbotron text-center">
-            <h1 class="tittle-game"><em>Harry Potter</em> Trivia</h1>
-        </div>
-    </header>
-    
-    <div class="card text-center">
-        <h5 class="card-header">Rapid H.P.Trivia</h5>
-         <div class="row">
-            <div class="col-md-12">
-                <div class="card-body">
-                    <div id="instructions">
-                    <p class="card-text">
-                        <h6>You have a short amount of time to answer each Harry Potter trivia question. </h6>
-                    </p> 
+    <div class=main-container>
+        <header class="toolbar">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="https://angel2367716.github.io/Portfolio/">Home</a></li>
+                    <li class="nav-spacer"></li>
+                    <li><a href="https://www.linkedin.com/in/marco-angel-37347b184/">LinkedIn</a></li>
+                    <li><a href="https://github.com/Angel2367716/TriviaGame">Repo</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="conatiner">
+                <div class="jumbotron text-center">
+                    <h1 class="tittle-game"><em>Harry Potter</em> Trivia</h1>
+                </div>
+                <div class="card text-center">
+                    <h5 class="card-header">Rapid H.P.Trivia</h5>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card-body">
+                                <div id="instructions">
+                                    <p class="card-text">
+                                        <h6>You have a short amount of time to answer each Harry Potter trivia question.
+                                        </h6>
+                                    </p>
+                                </div>
+                                <div id="wrapper">
+                                    <div id="subwrapper">
+                                        <button id="start">Start</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="wrapper">
-                    <div id="subwrapper">
-                        <button id="start">Start</button>
-                    </div>
-                    </div>
-                 </div> 
-             </div>
-        </div> 
-        
-    </div>
 
+                </div>
+            </div>
+        </section>
+        <div id="footer">
+            <br>
+            <h6>Author: Marco Angel</h6>
+            <h6>Contact information: <a href="mailto:someone@example.com">
+                    angel2367716@gmail.com</a></h6>
+        </div>
+    </div>
     <!-- <div id="music">            
             <audio src="../TriviaGame/assets/audio/music.mp3" controls loop="true" autoplay="true"></audio>
     </div> -->

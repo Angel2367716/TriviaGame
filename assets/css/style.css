@@ -1,10 +1,77 @@
 body {
-  background: url(../images/classroom.jpg)  no-repeat center center fixed;
+  /* background: url(../images/classroom.jpg)  no-repeat center center fixed; */
   -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover
   
+}
+
+.main-container {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  /* overflow: hidden; */
+  display: block;
+  position: relative;
+  padding-bottom: 10px; /* height of your footer */
+}
+
+.toolbar {
+  position: fixed;
+  width: 100%;
+  background:#eae9e9;
+  z-index: 500;
+}
+.navigation {
+  display:flex;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-spacer {
+  flex:1;
+}
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(#291C0E,#7F614A);
+    /* background-color: #5DA2D5; */
+    /* background-color: #3B8BEB; */
+    /* background-color: #E7E3D4; */
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display:flex;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #ECECEC;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover{
+    background-color: #8590AA;
+  }
+  
+
+
+
+section {
+  background: url(../images/classroom.jpg)  no-repeat center center fixed;
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; /* height of your footer */
 }
 
 .jumbotron, .card {
@@ -40,7 +107,7 @@ h2 {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-p, h1, h3, h4, h5, h6{
+p, h1, h3, h4, h5{
   font-weight: bold;
   font-size: 25px;
   color: #f35626;
@@ -74,4 +141,31 @@ p, h1, h3, h4, h5, h6{
 
 #music{
    display: none; 
+}
+
+#footer { 
+  height: 100px;
+  background-image: linear-gradient(#291C0E,#7F614A);
+  display: block; 
+  text-align: center;
+  /* background-color: #5DA2D5; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color:white;
+}
+
+
+
+
+@media (min-width: 1200px) {
+  .container {
+    width: 990px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 990px;
+  }
 }
