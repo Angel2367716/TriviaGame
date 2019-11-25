@@ -117,14 +117,14 @@ const game = {
     //Methods w/ functions 
     countdown: function () {
         game.counter--;
-        $("#counter").html(game.counter);
+        $('#counter').html(game.counter);
         if (game.counter <= 0) {
-            console.log("Times UP!");
+            console.log("Time UP!");
             game.timeUp();
         }
     },
     loadQuestion: function () {
-        timer = setInterval(game.countdown, 950);
+        timer = setInterval(game.countdown, 1000);
         $("#subwrapper").html("<h2>SECONDS REMAINING: <span id='counter'>20</span></h2>");
         $("#subwrapper").append("<h2>" + questions[game.currentQuestion].question + "</h2>");
         for (let i = 0; i < questions[game.currentQuestion].answers.length; i++) {
@@ -191,7 +191,7 @@ const game = {
     },
     reset: function () {
         game.currentQuestion=0;
-        game.counter=0;
+        game.counter=20;
         game.correct=0;
         game.incorrect=0;
         game.unanswered=0;

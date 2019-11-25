@@ -17,9 +17,9 @@ JS
             *inside the function write game dot clicked (e)
                 *note: e is used to store an event. So if we are passing e onto this function and also passing e onto the click we are actually passing through the event. We are passing through what is being click <!--move to 9)click method-->✅
 
-2)create questions and asnwers you would like to display on your game, also get include the image to the gif you would like to display if the player answered right ✅
+2)create questions and answers you would like to display on your game, also get include the image to the gif you would like to display if the player answered right ✅
     a)create an array with the questions and answers for your game (make sure you name this variable something that will not confuse you).  ✅
-        i)the questions and asnwers will be the object of the array✅
+        i)the questions and answers will be the object of the array✅
         ii)for this section you can use the following objects: question, answers, correctAnswers, image✅
 3)create a game object with the following properties: questions, currentQuestion, counter(<!--here you are setting up how much time you want the player to have in order to answer a question-->), correct(<!--keeps track of correct answers-->), incorrect(<!--keeps track of incorrect answers the player makes-->), also include the following methods: a countdown method, a load question method, a next question method, a timeup method, a results method, a click method, an asnwered correctly method, an answeredIncorrectly method, and a reset method✅
     a)specific instructions ✅
