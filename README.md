@@ -36,6 +36,6 @@ A simple Web Application that allows the User to play a simple trivia game.
 
 #### Results
 
-![Results](assets/images/results.PNG)
+![Results](assets/images/hp-results.PNG)
 
 
