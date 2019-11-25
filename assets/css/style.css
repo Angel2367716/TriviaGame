@@ -76,7 +76,8 @@ section {
 
 .jumbotron, .card {
   background-size:cover;
-  background-color: rgba(100,100,100, 0.5);
+  background-color: rgba(100,100,100, 0.7);
+  margin-top:5rem;
 
 color: inherit;
 }
@@ -86,7 +87,8 @@ font-weight: bold;
   font-size: 20px;
 -webkit-animation: hue 10s infinite linear; 
 background-size:cover;
-  background-color: rgba(165, 3, 3, 0.5);
+  /* background-color: rgba(165, 3, 3, 0.5); */
+  background-image:linear-gradient(45deg, gold 20%, brown 20% 40%, yellow 40% 60%, beige 60% 80%, orange 80%);
 color: inherit;
 }
 
@@ -110,18 +112,21 @@ h2 {
 p, h1, h3, h4, h5{
   font-weight: bold;
   font-size: 25px;
-  color: #f35626;
+  /* color: #f35626; */
   /* background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a); */
-  background-image: -webkit-linear-gradient(92deg, #35140a, #493518);
-
+/* background-image:  linear-gradient(45deg,gold,brown);  */
+  /* background-image: -webkit-linear-gradient(92deg, #35140a, #493518); */
+  /* background: linear-gradient(92deg, #AF8968, #754F2F, #A88470); */
+  /* background-image: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%); */
+  background-image:linear-gradient(45deg, gold 20%, brown 20% 40%, yellow 40% 60%, beige 60% 80%, orange 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 10s infinite linear;
+  -webkit-animation: hue 5s infinite linear;
 }
 
 
 
-@-webkit-keyframes hue {
+/* @-webkit-keyframes hue {
   from {
     -webkit-filter: hue-rotate(0deg);
   }
@@ -129,7 +134,7 @@ p, h1, h3, h4, h5{
   to {
     -webkit-filter: hue-rotate(360deg);
   }
-}
+} */
 
 .image-fluid {
   max-width: 100%;
